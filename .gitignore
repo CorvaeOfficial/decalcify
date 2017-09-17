@@ -3,7 +3,7 @@
 # New
 *.bak
 desktop.ini
-
+*secret*
 
 
 # Byte-compiled / optimized / DLL files
