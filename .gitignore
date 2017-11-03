@@ -4,3 +4,8 @@
 *.bak
 desktop.ini
 *secret*
+
+#Coding Resources
+0_Archive/*
+0_Reference/*
+__pycache__/*

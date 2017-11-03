@@ -1,4 +1,7 @@
->ABOUT
+# DeCalcify, a Corvae Labs App
+
+## ABOUT
+
 The goal of DeCalcify is to analyze and understand oneself's behavior and tendancies.
 This is accomplished via recording of events in Google Calendar and analysis of the events over time.
 To use this, one must do the following:
@@ -13,16 +16,16 @@ information and data to make actionable decisions to improve your life.
 -Raj Vinjamuri
 Founder, Corvae LLC
 
+## INSTALLATION and USE
 
->INSTALLATION and USE
 1. Set up Google credentials
-    <steps>
-    <enable on account through browser>
+    <<steps>>
+    <<enable on account through browser>>
 
 2. Install Application
-    <steps>
+    <<steps>>
 
-3. Run <app>.py
+3. Run <<app>>.py
 
 -------------------------------------------
 Copyright Corvae 2017, All Rights Reserved

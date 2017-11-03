@@ -36,8 +36,7 @@ def get_credentials():
     credential_dir = os.path.join(home_dir, '.credentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
-    credential_path = os.path.join(credential_dir,
-                                   'calendar-python-quickstart.json')
+    credential_path = os.path.join(credential_dir, 'calendar-python-quickstart.json')
 
     store = Storage(credential_path)
     credentials = store.get()
@@ -50,6 +49,15 @@ def get_credentials():
             credentials = tools.run(flow, store)
         print('Storing credentials to ' + credential_path)
     return credentials
+
+class UserCal:
+    """
+    The UserCal is an item that encapsulates a single calendar.
+    """
+    def __init__(self):
+        credentials = get_credentials()
+        http = credentials.authorize(httplib2.Http())
+        self.service = discovery.build('calendar', 'v3', http=http)
 
 def main():
     """ This should not be run.
